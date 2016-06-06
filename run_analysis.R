@@ -3,7 +3,7 @@
 ## Coursera
 
 ## 0. Setup
-setwd("/Users/rrbaker/Sites/_edu/coursera_r/exploring_closing")
+setwd("/Users/rrbaker/Sites/_edu/coursera_r/coursera_gettingcleaningdata")
 
 read.table("features.txt", skip=FALSE)[,2] -> train_features
 read.table("train/subject_train.txt", skip=FALSE) -> train_subject
@@ -43,7 +43,7 @@ gsub('_','',data_merged$activity) -> data_merged$activity #cleanup
 gsub('_','',data_merged$activity) -> data_merged$activity
 
 ## 4. Appropriately labels the data set with descriptive variable names.
-gsub("BodyBody","",names(data_merged)) -> names(data_merged) # cleanup
+# gsub("BodyBody","",names(data_merged)) -> names(data_merged) # cleanup
 
 
 ## 5. Export some data
